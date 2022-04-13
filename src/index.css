@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100vw;
+    background: #ecf0f1;
+/*   background-image: url(https://res.cloudinary.com/yaif/image/upload/c_scale,w_2400/v1637094816/1624_ga1yip.jpg);
+    background-size: cover; */
+}

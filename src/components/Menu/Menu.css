@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: clamp(2rem, 2.5vw, 2.5rem);
+  width: 7%;
+  height: 100%;
+  border: 1px solid violet;
+}
+
+.menu--font {
+  font-size: calc(0.1em + 3.0vmin);
+}

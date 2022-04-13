@@ -1,0 +1,51 @@
+.modal {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  height: 65%;
+  width: 21%;
+  box-shadow: 0px 5px 25px 7px rgba(0, 0, 0, 0.2);
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(6px);
+/*   filter: blur(3px); */
+/*   border: 2px solid black; */
+}
+
+ .box {
+  height: 70%;  
+  padding: clamp(0.2rem, 1.5vw, 1rem);
+  } 
+
+.modal__logo {
+  height: 15%;
+  font-size: calc(0.3em + 2.5vmin);
+/*   font-size: clamp(0.6rem, 2.5vw, 1.4rem); */
+  border: 1px solid blue;
+}
+
+.modal__title {
+  height: 25%;
+  font-size: calc(1em + 1.5vmin);
+/*   font-size: clamp(1.3rem, 2.5vw, 2.2rem); */
+  border: 1px solid red;
+}
+
+.modal__desc {
+  padding-top: clamp(0.2rem, 1.5vw, 1.8rem);
+  height: 60%;
+  font-size: clamp(.5rem, 2.0vw, 1.7rem);
+  border: 1px solid blue;
+}
+
+.modal__img {
+  height: 30%;
+/*   border: 1px solid darkgreen; */
+}
+
+.modal__img--bg {
+  background-image: url(https://res.cloudinary.com/yaif/image/upload/c_scale,w_335/v1649837859/pexels-charles-kettor-1005162_bz5ini.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   background-attachment: fixed; */
+}

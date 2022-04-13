@@ -1,0 +1,11 @@
+.left-block {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  max-width: 15%;
+/*   border: 1px solid red; */
+}
+
+.left-block--bg-color {
+  background: white;
+}

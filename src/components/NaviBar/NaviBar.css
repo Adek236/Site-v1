@@ -1,0 +1,24 @@
+.navi-bar {
+  display: flex;
+  flex-grow: 1;
+  max-height: 20%;
+  max-width: 70%;
+  width: 100%;
+/*   border: 1px solid green; */
+}
+
+.navi-bar__el {
+/*   width: calc(0.9em + 5vmin); */
+  width: min(20%, 100%);
+  padding-top: calc(1em + 2.5vmin);
+  text-align: center;
+}
+
+.navi-bar__el--font {
+  font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+}
+
+.navi-bar__el--font-color {
+  color: rgb(231, 13, 13);
+  border-bottom: 2px solid rgb(231, 13, 13);
+}
