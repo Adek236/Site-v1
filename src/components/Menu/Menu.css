@@ -5,9 +5,56 @@
   padding-top: clamp(2rem, 2.5vw, 2.5rem);
   width: 7%;
   height: 100%;
-  border: 1px solid violet;
+}
+
+.menu--mouse-over {
+  color: white;
+}
+
+.menu__icon {
+  height: 10%;
+}
+
+.menu__list {
+  height: 85%;
+}
+
+.menu__socials {
+  display:flex;
+  justify-content: flex-end;
+  height: 5%;
+  gap: calc(.1em + 1.0vmin);
+  align-content: space-between;
+  font-size: calc(0.1em + 2.0vmin);
 }
 
 .menu--font {
   font-size: calc(0.1em + 3.0vmin);
+}
+
+.menu--display {
+  background: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  color: #b1aaaa;
+  animation: animation-opacity .8s;
+}
+
+@keyframes animation-opacity {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    width: 13%;
+  }
+  .menu__icon {
+    height: 6%;
+  }
+  .menu__list {
+    height: 91%;
+  }
+  .menu__socials {
+    height: 3%;
+  }
 }

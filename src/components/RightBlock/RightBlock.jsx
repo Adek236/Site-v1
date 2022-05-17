@@ -12,7 +12,10 @@ const RightBlock = (props) => {
         handleHideModal={props.handleHideModal}
         />
       
-      <Footer whichElement={props.whichElement}/>
+      <Footer 
+        showFooter={props.showFooter}
+        whichElement={props.whichElement}
+        />
     </div>; 
 }
 

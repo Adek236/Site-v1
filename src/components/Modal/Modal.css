@@ -3,49 +3,89 @@
   top: 25%;
   left: 10%;
   height: 65%;
-  width: 21%;
-  box-shadow: 0px 5px 25px 7px rgba(0, 0, 0, 0.2);
+  width: 20%;
+  box-shadow: -3px 5px 25px 7px rgba(0, 0, 0, 0.2);
   background: rgba(255,255,255,0.2);
   backdrop-filter: blur(6px);
 /*   filter: blur(3px); */
 /*   border: 2px solid black; */
+  animation: animation .8s;
 }
 
- .box {
-  height: 70%;  
+.box {
+  height: 65%;  
   padding: clamp(0.2rem, 1.5vw, 1rem);
-  } 
+} 
 
 .modal__logo {
-  height: 15%;
-  font-size: calc(0.3em + 2.5vmin);
+  height: 12%;
+  font-size: calc(0.3em + 2.0vmin);
+  font-family: 'Marck Script', cursive;
 /*   font-size: clamp(0.6rem, 2.5vw, 1.4rem); */
-  border: 1px solid blue;
+}
+
+.modal__logo span {
+  border-bottom: 2px solid #eb4747;
 }
 
 .modal__title {
+  padding-top: 0.1rem;
   height: 25%;
-  font-size: calc(1em + 1.5vmin);
+  font-size: calc(0.5em + 3.5vmin);
+  text-align: left;
 /*   font-size: clamp(1.3rem, 2.5vw, 2.2rem); */
-  border: 1px solid red;
+/*   border: 1px solid red; */
 }
 
 .modal__desc {
-  padding-top: clamp(0.2rem, 1.5vw, 1.8rem);
-  height: 60%;
-  font-size: clamp(.5rem, 2.0vw, 1.7rem);
-  border: 1px solid blue;
+  padding-top: clamp(0.1rem, 1.5vw, 1.2rem);
+  height: 63%;
+  font-size: clamp(.6rem, 2.0vh, 1.7rem); 
+/*   text-overflow: ellipsis; */
+/*   font-weight: 100; */
+/*   border: 1px solid blue; */
 }
 
 .modal__img {
-  height: 30%;
+  height: 35%;
 /*   border: 1px solid darkgreen; */
+/*   width: calc(5em + 5vmin); */
 }
 
-.modal__img--bg {
-  background-image: url(https://res.cloudinary.com/yaif/image/upload/c_scale,w_335/v1649837859/pexels-charles-kettor-1005162_bz5ini.jpg);
+/* .modal__img--bg {
+  background-image: url(https://res.cloudinary.com/yaif/image/upload/v1650472812/ferrari-from-the-inside-4746504_640_hvup3r.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-/*   background-attachment: fixed; */
+/*   background-attachment: fixed; 
+} */
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@keyframes animation {
+
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    top: 15%;
+    left: 15%;
+    width: 70%;
+  }
 }

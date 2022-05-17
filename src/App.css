@@ -3,20 +3,20 @@
   margin: 0 auto;
   height: 90vh;
   min-width: 90vw;    
-/*   border: 1px solid black; */
-/*   box-shadow: -11px -9px 35px 3px rgba(175, 174, 174, 1); */
   box-shadow: -5px -4px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 .container-bg {
-  background-image: url(https://res.cloudinary.com/yaif/image/upload/v1649781274/pexels-abdulwahab-alawadhi-3422964_c3hage.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* https://www.pexels.com/pl-pl/zdjecie/samochod-pojazd-staroswiecki-klasyczny-10313051/ */
+/* https://www.pexels.com/pl-pl/zdjecie/droga-ulica-samochod-pojazd-11640930/ */
+
 .container--font {
   font-family: 'Catamaran', sans-serif;
-  font-weight: 600;
+/*   font-weight: 100; */
 }

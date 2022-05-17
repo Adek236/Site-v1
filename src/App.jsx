@@ -11,9 +11,10 @@ class App extends React.Component {
     super(props)
 
     this.state = {
+      showFooter: false,
       showModal : false,
-      whichElement: name,
-      showMenu: true
+      whichElement: db[0],
+      showMenu: false,
     }
 
     this.foundObj = this.getObjDB();
@@ -29,8 +30,10 @@ class App extends React.Component {
 
   handleShowModal(name) {
     this.setState({ 
+      showFooter: true,
       showModal: true,
-      whichElement: this.getObjDB(name)
+      whichElement: this.getObjDB(name),
+      showMenu: false,
     })
   }
   
@@ -47,12 +50,16 @@ class App extends React.Component {
   }
   
   render() {
-    return <main className="container container--font container-bg">
+    return <main
+             className="container container--font container-bg"
+             style={{ backgroundImage: `url(${this.state.whichElement.img})` }}
+           >
       <LeftBlock />
       <RightBlock 
         handleShowModal={this.handleShowModal}
         handleHideModal={this.handleHideModal}
         whichElement={this.state.whichElement}
+        showFooter={this.state.showFooter}
         />
       <Menu 
         toggleMenu={this.toggleMenu}

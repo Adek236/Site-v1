@@ -6,18 +6,50 @@ const FooterEl = (props) => {
     props.rightBorder ? "footer__el footer__el--right-border" : "footer__el";
   
   return <div className={whichClass}>
-    <div className="footer__el--font">{props.text}</div>
+    <div className="footer__el--font footer__el--modifier">
+      <p>
+        {props.text.value}
+        <span className="footer__el--font-value-mini">{props.text.valueDesc}</span>
+      </p>
+      <p className="footer__el--font-desc-mini">{props.text.mainDesc}</p>
+    </div>
   </div>;
 }
 
 const Footer = (props) => {
-    return <div className="footer footer--margin-bot">
-      <FooterEl text={props.whichElement?.skills?.[0]} 
-        rightBorder={true} />
-      <FooterEl text={props.whichElement?.skills?.[1]} 
-        rightBorder={true} />
-      <FooterEl text={props.whichElement?.skills?.[2]}/>
+    const element = <div className="footer footer--bg-mod footer--margin-bot">
+      <FooterEl 
+        text={
+          {
+            value: props.whichElement?.skills?.[0],
+            valueDesc: "",
+            mainDesc: "0-100kph"
+          }
+        } 
+        rightBorder={true} 
+        />
+      <FooterEl 
+        text={
+          {
+            value: props.whichElement?.skills?.[1],
+            valueDesc: "kph",
+            mainDesc: "Top speed"
+          }
+        } 
+        rightBorder={true} 
+        />
+      <FooterEl
+        text={
+          {
+            value: props.whichElement?.skills?.[2],
+            valueDesc: "hp",
+            mainDesc: "Power"
+          }
+        }
+        />
     </div>;  
+
+  return props.showFooter ? element : "";
 }
 
 

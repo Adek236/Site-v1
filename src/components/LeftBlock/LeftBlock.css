@@ -9,3 +9,10 @@
 .left-block--bg-color {
   background: white;
 }
+
+.left-block--text {
+  font-family: 'Marck Script', cursive;
+  padding-top: clamp(0.1rem, 1.5vw, 1.2rem);
+  justify-content: center;
+  font-size: clamp(.8rem, 2.2vw, 1.7rem);
+}

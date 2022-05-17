@@ -8,3 +8,9 @@
   max-width: 78%;
 /*   border: 1px solid blue; */
 }
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    max-width: 84%;
+  }
+}
