@@ -2,7 +2,7 @@ import React from 'react';
 
 const db = [
   {
-    title: "Orange",
+    title: "Orangee",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero enim sed faucibus turpis in. Eu non diam phasellus vestibulum lorem sed risus.",
     skills: ["3.2s","315","415"],
     // img: "https://res.cloudinary.com/yaif/image/upload/v1649781274/pexels-abdulwahab-alawadhi-3422964_c3hage.jpg",
